@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroShinx's Airpedia - Ryanair Fleet</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="hero-bg"></div>
+    <div class="blob blob-1"></div>
+    
+    <div class="wrapper">
+        <a href="index.html" class="back-link" data-es="← Volver a Aerolíneas" data-en="← Back to Airlines">← Volver a Aerolíneas</a>
+        
+        <header>
+            <h2 data-es="Flota de Ryanair" data-en="Ryanair Fleet">Ryanair Fleet</h2>
+            <div class="header-controls">
+                <form class="search-box" onsubmit="handleSearch(event, '../')">
+                    <input type="text" id="searchInput" placeholder="Search / Buscar...">
+                    <button type="submit">🔍</button>
+                </form>
+                <button class="lang-btn" id="langToggle" onclick="toggleLanguage()">EN / ES</button>
+            </div>
+        </header>
+
+        <main class="content-grid">
+            <!-- Ejemplo 1: Matrícula EI-DDC -->
+            <div class="glass-card">
+                <img src="../Fotos/ryanair-ei-ddc.jpg" alt="Boeing 737-800 EI-DDC" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500&auto=format&fit=crop&q=60'">
+                <div class="card-body">
+                    <span class="badge" data-es="Boeing 737-800" data-en="Boeing 737-800">Boeing 737-800</span>
+                    <h3><a href="ryanair-ei-ddc.html" style="color: inherit; text-decoration: none;">EI-DDC</a></h3>
+                    <p data-es="Registro clásico con la librea estándar de Ryanair y winglets scimitar." data-en="Classic registration featuring standard Ryanair livery and split scimitar winglets.">Registro clásico con la librea estándar de Ryanair y winglets scimitar.</p>
+                </div>
+            </div>
+
+            <!-- Ejemplo 2: Matrícula EI-EYZ -->
+            <div class="glass-card">
+                <img src="../Fotos/ryanair-ei-eyz.jpg" alt="Boeing 737-8200 EI-EYZ" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1570749638541-2b740ffb2029?w=500&auto=format&fit=crop&q=60'">
+                <div class="card-body">
+                    <span class="badge" data-es="Boeing 737-8200 Gamechanger" data-en="Boeing 737-8200 Gamechanger">Boeing 737-8200 Gamechanger</span>
+                    <h3><a href="ryanair-ei-eyz.html" style="color: inherit; text-decoration: none;">EI-EYZ</a></h3>
+                    <p data-es="Unidad de alta densidad de pasajeros con puertas de emergencia adicionales." data-en="High-density passenger unit featuring additional emergency exit doors.">Unidad de alta densidad de pasajeros con puertas de emergencia adicionales.</p>
+                </div>
+            </div>
+
+            <!-- Ejemplo 3: Matrícula 9H-QEA -->
+            <div class="glass-card">
+                <img src="../Fotos/ryanair-9h-qea.jpg" alt="Boeing 737-800 9H-QEA" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=500&auto=format&fit=crop&q=60'">
+                <div class="card-body">
+                    <span class="badge" data-es="Malta Air (Ryanair Group)" data-en="Malta Air (Ryanair Group)">Malta Air (Ryanair Group)</span>
+                    <h3><a href="ryanair-9h-qea.html" style="color: inherit; text-decoration: none;">9H-QEA</a></h3>
+                    <p data-es="Operado bajo el AOC de Malta Air con matrícula maltesa y títulos corporativos." data-en="Operated under Malta Air's AOC with Maltese registration and corporate titles.">Operado bajo el AOC de Malta Air con matrícula maltesa y títulos corporativos.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/search.js"></script>
+</body>
+</html>
