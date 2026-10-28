@@ -3,48 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airpedia - NeoBrutalism</title>
+    <title>Airpedia - Editorial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <h1>AIRPEDIA<span>.</span></h1>
-        <nav>
-            <a href="#articulos">Artículos</a>
-            <a href="#sobre">Acerca</a>
-        </nav>
-    </header>
+    <div class="page">
+        <header class="header">
+            <h1>Airpedia.</h1>
+            <p class="subtitle">Una enciclopedia personal sobre código, diseño y curiosidades.</p>
+        </header>
 
-    <main class="container">
-        <section class="hero">
-            <h2>Conocimiento libre, directo al grano.</h2>
-            <p>Explora conceptos, ideas y guías con un diseño sin filtros.</p>
+        <section class="feed">
+            <article class="post-item">
+                <span class="date">Octubre 2026</span>
+                <h2><a href="#">El poder de los archivos Markdown en la documentación moderna</a></h2>
+                <p>Por qué el formato plano sigue siendo el rey indiscutible para estructurar el conocimiento técnico.</p>
+            </article>
+
+            <article class="post-item">
+                <span class="date">Septiembre 2026</span>
+                <h2><a href="#">Introducción a las Variables CSS Nativas</a></h2>
+                <p>Elimina preprocesadores innecesarios y maneja temas dinámicos directamente en tu hoja de estilos.</p>
+            </article>
+
+            <article class="post-item">
+                <span class="date">Agosto 2026</span>
+                <h2><a href="#">Desplegando en GitHub Pages sin morir en el intento</a></h2>
+                <p>Guía paso a paso para configurar tu flujo de trabajo y tener tu web online en menos de 5 minutos.</p>
+            </article>
         </section>
 
-        <div class="grid-cards" id="articulos">
-            <article class="card bg-yellow">
-                <span class="tag">Tecnología</span>
-                <h3>¿Qué es GitHub Pages?</h3>
-                <p>Aloja tus webs estáticas de forma gratuita, rápida y directamente desde un repositorio.</p>
-                <a href="#" class="btn">Leer más</a>
-            </article>
-            <article class="card bg-pink">
-                <span class="tag">Diseño</span>
-                <h3>CSS Grid vs Flexbox</h3>
-                <p>Cuándo usar cada herramienta de maquetación para no morir en el intento.</p>
-                <a href="#" class="btn">Leer más</a>
-            </article>
-            <article class="card bg-green">
-                <span class="tag">Cultura</span>
-                <h3>El origen del Lo-Fi</h3>
-                <p>Cómo los errores de grabación se convirtieron en la banda sonora para estudiar del mundo.</p>
-                <a href="#" class="btn">Leer más</a>
-            </article>
-        </div>
-    </main>
-
-    <footer>
-        <p>Hecho con ⚡ para GitHub Pages.</p>
-    </footer>
+        <footer class="footer">
+            <p>Airpedia 2026 — Diseñado con simplicidad.</p>
+        </footer>
+    </div>
 </body>
 </html>
