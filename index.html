@@ -3,38 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airpedia - Cyber Glass</title>
+    <title>Airpedia - Aviation Database</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="hero-bg"></div>
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
     <div class="wrapper">
         <header>
             <h2>Airpedia<span>_</span></h2>
-            <div class="search-box">
-                <input type="text" placeholder="Buscar en la base de datos...">
+            <div class="header-controls">
+                <form class="search-box" onsubmit="handleSearch(event, './')">
+                    <input type="text" id="searchInput" placeholder="Search / Buscar...">
+                    <button type="submit">🔍</button>
+                </form>
+                <button class="lang-btn" id="langToggle" onclick="toggleLanguage()">EN / ES</button>
             </div>
         </header>
 
         <main class="content-grid">
-            <div class="glass-card">
-                <span class="badge">AI & Future</span>
-                <h3>Inteligencia Artificial Generativa</h3>
-                <p>Cómo los modelos de lenguaje están redefiniendo la forma en que escribimos código y creamos arte.</p>
-            </div>
-            <div class="glass-card">
-                <span class="badge">Protocolos</span>
-                <h3>Optimización Web</h3>
-                <p>Técnicas avanzadas de minificación y carga diferida para páginas ultrarrápidas.</p>
-            </div>
-            <div class="glass-card">
-                <span class="badge">Security</span>
-                <h3>Ciberseguridad Básica</h3>
-                <p>Buenas prácticas para proteger tus repositorios y proyectos web desde el día uno.</p>
-            </div>
+            <a href="airline/index.html" class="glass-card">
+                <img src="Fotos/airline-card.jpg" alt="Airline" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500&auto=format&fit=crop&q=60'">
+                <div class="card-body">
+                    <span class="badge" data-es="Compañías Aéreas" data-en="Airlines">Compañías Aéreas</span>
+                    <h3 data-es="Aerolíneas" data-en="Airline">Airline</h3>
+                    <p data-es="Explora flotas, historia y alianzas de las principales aerolíneas del mundo." data-en="Explore fleets, history, and alliances of the world's leading airlines.">Explora flotas, historia y alianzas de las principales aerolíneas del mundo.</p>
+                </div>
+            </a>
+
+            <a href="aircraft/index.html" class="glass-card">
+                <img src="Fotos/aircraft-card.jpg" alt="Aircraft" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500&auto=format&fit=crop&q=60'">
+                <div class="card-body">
+                    <span class="badge" data-es="Aeronaves" data-en="Aircraft">Aeronaves</span>
+                    <h3 data-es="Avión" data-en="Aircraft">Aircraft</h3>
+                    <p data-es="Especificaciones técnicas, modelos comerciales y de aviación general." data-en="Technical specifications, commercial models, and general aviation.">Especificaciones técnicas, modelos comerciales y de aviación general.</p>
+                </div>
+            </a>
+
+            <a href="airport/index.html" class="glass-card">
+                <img src="Fotos/airport-card.jpg" alt="Airport" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1506015391300-4802dc74de2e?w=500&auto=format&fit=crop&q=60'">
+                <div class="card-body">
+                    <span class="badge" data-es="Terminales" data-en="Terminals">Terminales</span>
+                    <h3 data-es="Aeropuerto" data-en="Airport">Airport</h3>
+                    <p data-es="Guías de hubs internacionales, torres de control y pistas de aterrizaje." data-en="International hub guides, control towers, and runways.">Guías de hubs internacionales, torres de control y pistas de aterrizaje.</p>
+                </div>
+            </a>
         </main>
     </div>
+
+    <script src="js/search.js"></script>
 </body>
 </html>
